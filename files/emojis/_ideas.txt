@@ -1,17 +1,26 @@
+
+
+
+
+
+
+
 toilet
 car
-babyface
-boyface
-girlface
-manface
-womanface
 
 
 
 
-cathappy
-catsad
-catscream
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,8 +38,8 @@ catscream
 
 mouse
 bunny
-bear
-polarbear
+
+
 koala
 lion
 pig
@@ -43,7 +52,7 @@ eagle
 owl
 
 bee
-snail
+
 fish
 dolphin
 shark
@@ -61,19 +70,20 @@ apple
 pear
 orange
 lemon
-banana
+lime
+
 watermelon
 tomato
 bread
 burger
 fries
 pizza
-riceball
+
 ramen
 curry
 taco
-sushi
-bento
+
+
 
 icecream
 cake
@@ -107,15 +117,15 @@ trumpet
 dice
 bowling
 controller
-puzzle
-trafficlight
+
+
 moai
 
 laptop
 computer
 watch
 printer
-mouse
+computermouse
 save
 disc
 camera
@@ -130,17 +140,26 @@ lowbattery
 lightbulb
 flashlight
 candle
-bill
-stackofbills
-coin
-moneybag
-diamond
+
+
+
+
+
 ladder
 toolbox
-wrench
-hammer
-pickaxe
+
+
+
+
+
+saw
+
+
+mousetrap
 gear
+bolt
+screw
+brick
 axe
 knife
 sword
@@ -161,12 +180,12 @@ pin
 scissors
 pen
 
-paper
-pencilonpaper
-lock
-unlocked
-magnify
-heart
+
+
+
+
+
+
 
 
 
@@ -180,10 +199,13 @@ nosound
 lowsound
 bell
 nobell
-speech
 megaphone
-thinking
-whiteflag
-blackflag
-checkflag
-redflag
+
+
+
+
+
+
+animatedsmile
+animatedfrown
+animatedsilly
