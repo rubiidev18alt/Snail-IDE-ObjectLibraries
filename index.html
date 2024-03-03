@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<title>Snail IDE - Library</title>
-		<style>
-			* {
-				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			}
-			body {
-				min-width: 400px;
-			}
+<head>
+    <title>Snail IDE - Library</title>
+    <style>
+        * {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 
-			.nav-bar {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 3rem;
-				background: #800080;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-			}
+        body {
+            min-width: 400px;
+            background-color: #333;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
 
-			.nav-bar a:not(.home-redirect) {
-				margin: 0 8px;
-				height: 100%;
-			}
-			.nav-bar button {
-				height: 100%;
-				padding: 8px 12px;
-				background: transparent;
-				color: white;
-				font-weight: bold;
-				font-size: 0.75rem;
-				border: 0;
-				margin: 0;
-				cursor: pointer;
-			}
-			.nav-bar button:hover {
-				background: rgba(0, 0, 0, 0.125);
-			}
-			
-			.home-redirect {
-				height: 80%;
-				margin-left: 4px;
-			}
-			.home-redirect > img {
-				height: 100%;
-			}
+        .nav-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 3rem;
+            background: #222;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-			.nav-margin {
-				width: 100%;
-				height: 3rem;
-			}
+        .nav-bar a:not(.home-redirect) {
+            margin: 0 8px;
+            height: 100%;
+        }
 
-			.view-files {
-				padding: 8px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				cursor: pointer;
-			}
-			.view-files img {
-				margin-bottom: 6px;
-				width: 20px;
-			}
-			.view-files p {
-				margin-block: 0;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="nav-bar">
-			<a class="home-redirect" href="https://snail-ide.vercel.app">
-				<img src="snailide_hd.png" alt="Icon">
-			</a>
-			<a href="./">
-				<button>
-					Home
-				</button>
-			</a>
-			<a href="./files">
-				<button>
-					Files
-				</button>
-			</a>
-			<a href="./emojis">
-				<button>
-					Emojis
-				</button>
-			</a>
-			<a href="https://github.com/Snail-IDE/Snail-IDE">
-				<button>
-					GitHub
-				</button>
-			</a>
-		</div>
-		<div class="nav-margin"></div>
-		<h1>Snail IDE Object Libraries</h1>
-		<p>This site contains all PenguinMod sounds, costumes or other items that are added to the library. It also contains new Snail IDE emojis.</p>
-		<p>To add an item to one of these libraries, feel free to contribute to the <a href="https://github.com/Snail-IDE/Snail-IDE-ObjectLibraries">GitHub repository.</a></p>
-		<br>
-		<p><b>Note: All new sounds & costumes MUST be Public Domain (creative commons 0 or other public licenses) or MIT licensed. There are no exceptions.</b></p>
-		<p>If you make the content yourself and upload it here, note that your content can be used, sold and modified without your permission required or credits required.</p>
-		<br>
-		<p>Please check your sources to confirm the content is allowed on PenguinMod. For example, PenguinMod gets sounds from <a href="https://freesound.org">freesound.org</a> under the Creative Commons 0 License.</p>
-		<br>
-		<a href="https://snail-ide-object-libraries.vercel.app/files">
-			<button class="view-files">
-				<img src="folder.svg" alt="Icon">
-				<p>View Library Files</p>
-			</button>
-		</a>
-	</body>
+        .nav-bar button {
+            height: 100%;
+            padding: 8px 12px;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            font-size: 0.75rem;
+            border: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .nav-bar button:hover {
+            background: rgba(255, 255, 255, 0.125);
+        }
+
+        .home-redirect {
+            height: 80%;
+            margin-left: 4px;
+        }
+
+        .home-redirect > img {
+            height: 100%;
+        }
+
+        .nav-margin {
+            width: 100%;
+            height: 3rem;
+        }
+
+        .view-files {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .view-files img {
+            margin-bottom: 6px;
+            width: 20px;
+        }
+
+        .view-files p {
+            margin-block: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="nav-bar">
+    <a class="home-redirect" href="https://snail-ide.vercel.app">
+        <img src="snailide_hd.png" alt="Icon">
+    </a>
+    <a href="./">
+        <button>
+            Home
+        </button>
+    </a>
+    <a href="./files">
+        <button>
+            Files
+        </button>
+    </a>
+    <a href="./emojis">
+        <button>
+            Emojis
+        </button>
+    </a>
+    <a href="https://github.com/Snail-IDE/Snail-IDE">
+        <button>
+            GitHub
+        </button>
+    </a>
+</div>
+<div class="nav-margin"></div>
+<h1>Snail IDE Object Libraries</h1>
+<p>This site contains all PenguinMod sounds, costumes or other items that are added to the library. It also contains new Snail IDE emojis.</p>
+<p>To add an item to one of these libraries, feel free to contribute to the <a href="https://github.com/Snail-IDE/Snail-IDE-ObjectLibraries">GitHub repository.</a></p>
+<br>
+<p><b>Note: All new sounds & costumes MUST be Public Domain (creative commons 0 or other public licenses) or MIT licensed. There are no exceptions.</b></p>
+<p>If you make the content yourself and upload it here, note that your content can be used, sold and modified without your permission required or credits required.</p>
+<br>
+<p>Please check your sources to confirm the content is allowed on PenguinMod. For example, PenguinMod gets sounds from <a href="https://freesound.org">freesound.org</a> under the Creative Commons 0 License.</p>
+<br>
+<a href="https://snail-ide-object-libraries.vercel.app/files">
+    <button class="view-files">
+        <img src="folder.svg" alt="Icon">
+        <p>View Library Files</p>
+    </button>
+</a>
+</body>
 </html>
