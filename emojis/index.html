@@ -178,10 +178,10 @@
             .split('\n')
             .map(line => line.trim())
             .filter(line => line.length > 0) // remove blank lines
-            .filter(line => line.endsWith('.png</a>')) // remove .txt file
+            .filter(line => line.endsWith('.png</a>') || line.endsWith('.svg</a>')) // remove .txt file
             .map(emoji => {
                 const cut = emoji.substring(22);
-                const final = cut.substring(cut.indexOf('>') + 1, cut.indexOf('.png</a>'))
+                const final = cut.substring(cut.indexOf('>') + 1, cut.length - 4 )
                 return final;
             });
 
