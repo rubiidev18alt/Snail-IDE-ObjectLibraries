@@ -181,7 +181,7 @@
             .filter(line => line.endsWith('.png</a>')) // remove .txt file
             .map(emoji => {
                 const cut = emoji.substring(22);
-                const final = cut.substring(cut.indexOf('>') + 1, cut.length - 9 )
+                const final = cut.substring(cut.indexOf('>') + 1, cut.length - 8 )
                 return final;
             });
 
