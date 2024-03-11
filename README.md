@@ -1,2 +1,2 @@
-# PenguinMod-ObjectLibraries
-The repo containing all new Public Domain costumes, sounds and others in PenguinMod's libraries.
+# Snail-IDE-ObjectLibraries
+The repo containing all new Public Domain costumes, sounds and others in Snail IDE's libraries.
