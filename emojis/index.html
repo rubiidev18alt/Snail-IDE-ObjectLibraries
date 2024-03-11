@@ -162,7 +162,7 @@
     const emojiHtmlUrl = 'https://snail-ide-object-libraries.vercel.app/files/emojis';
 
     const emojiElementHTML = `<button class="emoji-card" onclick="copyEmojiName(\`{NAME}\`)">
-    <img src="../files/emojis/{NAME}.png" alt=":{NAME}:" title=":{NAME}:">
+    <img src="../files/emojis/{FULLNAME}" alt=":{NAME}:" title=":{NAME}:">
     <p>:{NAME}:</p>
 </button>`;
 
@@ -181,13 +181,14 @@
             .filter(line => line.endsWith('.png</a>') || line.endsWith('.svg</a>')) // remove .txt file
             .map(emoji => {
                 const cut = emoji.substring(22);
-                const final = cut.substring(cut.indexOf('>') + 1, cut.length - 8 )
+                const final = cut.substring(cut.indexOf('>') + 1, cut.length - 4 )
                 return final;
             });
 
         loadingSpinner.remove();
         for (const emoji of emojis) {
-            emojiContainer.innerHTML += emojiElementHTML.replace(/\{NAME\}/gm, emoji);
+            emojiContainer.innerHTML += emojiElementHTML.replace(/\{NAME\}/gm, emoji.substring(0, emoji.length - 4 ));
+            emojiContainer.innerHTML += emojiElementHTML.replace(/\{FULLNAME\}/gm, emoji);
         }
     })().catch(err => {
         loadingSpinner.remove();
